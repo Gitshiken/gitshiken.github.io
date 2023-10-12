@@ -67,6 +67,9 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: var(--redwood);
+}
 /* Style the header */
 header {
     text-align: center;
