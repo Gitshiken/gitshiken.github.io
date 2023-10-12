@@ -36,7 +36,10 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
+/*Scrolling animation*/
+html {
+    scroll-behavior: smooth;
+}
 /* Set background color and text color for the entire page */
 body {
     background-color: var(--seashell); /* Light gray background */
