@@ -87,7 +87,7 @@ header p {
 
 /* Style the sections */
 section {
-    padding: 2.5rem;
+    padding: 2rem;
     color: var(--jet); /* Dark gray section text */
 }
 
@@ -122,11 +122,12 @@ section ul li{
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
     white-space: nowrap; /* Prevent line breaks inside event cards */
     width: 100%; /* Set the container width to 100% of the viewport */
+    justify-content: center;
 }
 
 .event-card {
-    width: 18.75rem; /* Fixed card width */
-    margin: 1.25rem; /* Margin for spacing between cards */
+    width: 22rem; /* Fixed card width */
+    margin: 0rem 2.25rem 2rem; /* Margin for spacing between cards */
     padding: 1.25rem;
     border: 0.063rem solid #ddd; /* Add borders to the cards for separation */
     box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* Shadow effect */
