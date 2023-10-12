@@ -1,0 +1,161 @@
+/* Custom Colors */
+:root {
+    --maroon: #7F0202ff; /* Maroon */
+    --seashell: #FFF5ECff; /* Seashell */
+    --silver: #AEA39Cff; /* Silver */
+    --redwood: #9A4A46ff; /* Redwood */
+    --jet: #2A2A2Bff; /* Jets */
+}
+
+/* Import your custom font */
+@font-face {
+    font-family: 'Eina'; /* Name your font family */
+    src: url('./eina/Eina01-Regular.ttf') format('truetype'); /* Path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eina'; /* Name your font family */
+    src: url('./eina/Eina01-SemiBold.ttf') format('truetype'); /* Path to your font file */
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+/* Style the banner */
+#banner {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the banner horizontally */
+}
+/* Reset some default styles to ensure consistency */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and text color for the entire page */
+body {
+    background-color: var(--seashell); /* Light gray background */
+    color: var(--jet); /* Dark gray text */
+    font-family: 'Eina', sans-serif;
+}
+
+/* Style the navigation menu */
+nav {
+    background-color: var(--jet); /* Dark gray background */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; /* White links */
+    font-weight: bold;
+}
+
+/* Style the header */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+    color: var(--jet); /* Dark gray header text */
+}
+
+header p {
+    font-size: 18px;
+    color: #777; /* Light gray header paragraph text */
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+    color: var(--jet); /* Dark gray section text */
+}
+
+section h2 {
+    color: var(--jet); /* Dark gray section heading */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* CSS for the event cards section */
+
+
+/* CSS for the event cards section */
+#events {
+    overflow: hidden; /* Hide the overflow to prevent vertical scrolling */
+}
+
+#event-cards-container {
+    display: flex;
+    flex-wrap: nowrap; /* Prevent wrapping to the next row */
+    -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    white-space: nowrap; /* Prevent line breaks inside event cards */
+    width: 100%; /* Set the container width to 100% of the viewport */
+}
+
+.event-card {
+    width: 300px; /* Fixed card width */
+    margin-right: 20px; /* Margin for spacing between cards */
+    padding: 20px;
+    border: 1px solid #ddd; /* Add borders to the cards for separation */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    text-align: center;
+    background-color: #fff; /* White background for the cards */
+}
+
+.event-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.event-card h3 {
+    font-size: 20px;
+    color: #333; /* Dark gray event title */
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #777; /* Light gray event date and time */
+}
+
+/* Media query to change the layout to column when overflow */
+@media (max-width: 1000px) {
+    #event-cards-container {
+        flex-direction: column; /* Change to a vertical column layout */
+        align-items: center; /* Center-align cards in the column */
+    }
+}
+
+
+
+/* Style the footer */
+footer {
+    background-color: var(--jet); /* Dark gray background */
+    color: #fff; /* White text */
+    text-align: center;
+    padding: 10px 0;
+}
