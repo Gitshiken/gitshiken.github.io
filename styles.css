@@ -101,7 +101,12 @@ section p {
     font-size: 1.125rem;
     line-height: 1.5;
 }
-
+section ul {
+    margin: 0.6rem;
+}
+section ul li{
+    margin: 0rem 0rem 0rem 1rem;
+}
 
 /* CSS for the event cards section */
 
