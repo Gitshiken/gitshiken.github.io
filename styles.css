@@ -36,7 +36,10 @@ body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
-
+/*Scrolling animation*/
+html {
+    scroll-behavior: smooth;
+}
 /* Set background color and text color for the entire page */
 body {
     background-color: var(--seashell); /* Light gray background */
@@ -47,7 +50,7 @@ body {
 /* Style the navigation menu */
 nav {
     background-color: var(--jet); /* Dark gray background */
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
 
 nav ul {
@@ -58,7 +61,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 1.25rem;
 }
 
 nav a {
@@ -67,38 +70,46 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    color: var(--redwood);
+}
 /* Style the header */
 header {
     text-align: center;
 }
 
 header h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
     color: var(--jet); /* Dark gray header text */
 }
 
 header p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #777; /* Light gray header paragraph text */
 }
 
 /* Style the sections */
 section {
-    padding: 40px;
+    padding: 2rem;
     color: var(--jet); /* Dark gray section text */
 }
 
 section h2 {
     color: var(--jet); /* Dark gray section heading */
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
 }
 
 section p {
-    font-size: 18px;
+    font-size: 1.125rem;
     line-height: 1.5;
 }
-
+section ul {
+    margin: 0.6rem;
+}
+section ul li{
+    margin: 0rem 0rem 0rem 1rem;
+}
 
 /* CSS for the event cards section */
 
@@ -114,14 +125,15 @@ section p {
     -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
     white-space: nowrap; /* Prevent line breaks inside event cards */
     width: 100%; /* Set the container width to 100% of the viewport */
+    justify-content: center;
 }
 
 .event-card {
-    width: 300px; /* Fixed card width */
-    margin-right: 20px; /* Margin for spacing between cards */
-    padding: 20px;
-    border: 1px solid #ddd; /* Add borders to the cards for separation */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 22rem; /* Fixed card width */
+    margin: 0rem 2.25rem 2rem; /* Margin for spacing between cards */
+    padding: 1.25rem;
+    border: 0.063rem solid #ddd; /* Add borders to the cards for separation */
+    box-shadow: 0px 0px 0.625rem rgba(0, 0, 0, 0.1); /* Shadow effect */
     text-align: center;
     background-color: #fff; /* White background for the cards */
 }
@@ -129,16 +141,16 @@ section p {
 .event-card img {
     max-width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .event-card h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #333; /* Dark gray event title */
 }
 
 .event-card p {
-    font-size: 16px;
+    font-size: 1rem;
     color: #777; /* Light gray event date and time */
 }
 
@@ -157,5 +169,5 @@ footer {
     background-color: var(--jet); /* Dark gray background */
     color: #fff; /* White text */
     text-align: center;
-    padding: 10px 0;
+    padding: 0.625rem 0;
 }
